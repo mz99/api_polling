@@ -1,0 +1,10 @@
+<h1>Meetup Client </h1>
+
+  <% @result.each do |r| %>
+    <p>
+    Name: <%= r["name"] %> <br>
+    Location: <%= r["localized_location"] %> <br>
+    Status: <%= r["status"] %> <br>
+    Category: <%= r["category[:name]"] %>
+  </p>
+  <% end %>

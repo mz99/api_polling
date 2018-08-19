@@ -1,0 +1,7 @@
+<h2>Meetups client</h2>
+
+<%= form_tag("/meetups") do %>
+  <%= label_tag(:meetup, "Type your search query") %>
+  <%= text_field_tag("meetup[text]") %>
+  <%= submit_tag("Search") %>
+<% end %>
